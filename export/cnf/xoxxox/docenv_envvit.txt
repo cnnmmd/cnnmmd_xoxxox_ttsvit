@@ -1,0 +1,14 @@
+FROM ubuntu:22.04
+
+ENV OPTAPT=""
+#ENV OPTAPT="-o Acquire::AllowInsecureRepositories=true -o Acquire::AllowDowngradeToInsecureRepositories=true"
+COPY cnsver.txt .
+
+RUN apt-get ${OPTAPT} -y update
+RUN apt-get ${OPTAPT} -y upgrade
+RUN apt-get ${OPTAPT} -y install python3
+RUN apt-get ${OPTAPT} -y install pip
+RUN ln -s /usr/bin/python3.10 /usr/bin/python
+RUN pip install -c cnsver.txt torch torchaudio --index-url https://download.pytorch.org/whl/cu118 
+RUN pip install -c cnsver.txt style-bert-vits2 
+RUN pip install -c cnsver.txt aiohttp

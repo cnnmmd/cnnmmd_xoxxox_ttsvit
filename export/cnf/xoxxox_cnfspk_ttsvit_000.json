@@ -1,0 +1,12 @@
+{
+  "001": {
+    "vce": "amitaro/amitaro.safetensors", 
+    "cfg": "amitaro/config.json",
+    "sty": "amitaro/style_vectors.npy"
+  },
+  "002": {
+    "vce": "Anneli/Anneli_e116_s32000.safetensors",
+    "cfg": "Anneli/config.json",
+    "sty": "Anneli/style_vectors.npy"
+  }
+}
