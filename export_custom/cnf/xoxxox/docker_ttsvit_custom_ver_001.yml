@@ -1,0 +1,10 @@
+services:
+  xoxxox_ttsvit:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    command: bash -c "cd /opt/appvit/mdl && python /opt/common/bin/xoxxox/srvtts.py --engine xoxxox/engine_ttsvit --device cuda"
