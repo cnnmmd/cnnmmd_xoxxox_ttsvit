@@ -1,3 +1,0 @@
-services:
-  xoxxox_ttsvit:
-    command: bash -c "cd /opt/appvit/mdl && python /opt/common/bin/xoxxox/srvtts.py --engine xoxxox/engine_ttsvit --device cuda"
