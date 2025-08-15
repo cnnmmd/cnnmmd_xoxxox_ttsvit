@@ -29,7 +29,6 @@ function getmdl {
 
 if ! docker inspect ${imgtgt} > /dev/null 2>&1
 then
-  test -d "${pthdoc}" || mkdir "${pthdoc}"
   cd ${pthdoc}
   test -e ${txtcns} || curl https://raw.githubusercontent.com/litagin02/Style-Bert-VITS2/master/requirements.txt > ${txtcns}
 fi

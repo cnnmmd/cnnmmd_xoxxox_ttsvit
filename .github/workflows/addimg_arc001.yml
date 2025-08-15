@@ -1,0 +1,15 @@
+name: "addimg_arc001"
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+jobs:
+  call:
+    uses: cnnmmd/manage_docenv/.github/workflows/addimg_002.yml@master
+    with:
+      rep: "cnnmmd/cnnmmd_xoxxox_ttsvit"
+      nam: "xoxxox"
+      env: "envvit"
+      ver: "001"
+      opt: "arc001"
