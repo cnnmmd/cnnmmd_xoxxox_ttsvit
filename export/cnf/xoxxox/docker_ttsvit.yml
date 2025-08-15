@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   xoxxox_ttsvit:
-    image: xoxxox_envvit:001
+    image: xoxxox/envvit:001
     container_name: xoxxox_ttsvit
     volumes:
     - ../../../export:/opt/common
