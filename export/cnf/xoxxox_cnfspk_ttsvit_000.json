@@ -5,8 +5,13 @@
     "sty": "amitaro/style_vectors.npy"
   },
   "002": {
-    "vce": "Anneli/Anneli_e116_s32000.safetensors",
-    "cfg": "Anneli/config.json",
-    "sty": "Anneli/style_vectors.npy"
+    "vce": "tsukuyomi-chan/tsukuyomi-chan_e77_s2000.safetensors",
+    "cfg": "tsukuyomi-chan/config.json",
+    "sty": "tsukuyomi-chan/style_vectors.npy"
+  },
+  "003": {
+    "vce": "Rinne/Rinne.safetensors",
+    "cfg": "Rinne/config.json",
+    "sty": "Rinne/style_vectors.npy"
   }
 }
