@@ -45,14 +45,20 @@ then
   test -d mdl || mkdir mdl
 
   getmdl amitaro \
-  https://huggingface.co/litagin/sbv2_amitaro/tree/main/amitaro \
+  https://huggingface.co/litagin/sbv2_amitaro \
   https://huggingface.co/litagin/sbv2_amitaro/resolve/main/amitaro/amitaro.safetensors \
   https://huggingface.co/litagin/sbv2_amitaro/resolve/main/amitaro/config.json \
   https://huggingface.co/litagin/sbv2_amitaro/resolve/main/amitaro/style_vectors.npy
 
-  getmdl Anneli \
-  https://huggingface.co/kaunista/kaunista-style-bert-vits2-models/tree/main/Anneli \
-  https://huggingface.co/kaunista/kaunista-style-bert-vits2-models/resolve/main/Anneli/Anneli_e116_s32000.safetensors \
-  https://huggingface.co/kaunista/kaunista-style-bert-vits2-models/resolve/main/Anneli/config.json \
-  https://huggingface.co/kaunista/kaunista-style-bert-vits2-models/resolve/main/Anneli/style_vectors.npy
+  getmdl tsukuyomi-chan \
+  https://huggingface.co/ayousanz/tsukuyomi-chan-style-bert-vits2-model \
+  https://huggingface.co/ayousanz/tsukuyomi-chan-style-bert-vits2-model/resolve/main/config.json \
+  https://huggingface.co/ayousanz/tsukuyomi-chan-style-bert-vits2-model/resolve/main/style_vectors.npy \
+  https://huggingface.co/ayousanz/tsukuyomi-chan-style-bert-vits2-model/resolve/main/tsukuyomi-chan_e77_s2000.safetensors
+
+  getmdl Rinne \
+  https://huggingface.co/RinneAi/Rinne_Style-Bert-VITS2 \
+  https://huggingface.co/RinneAi/Rinne_Style-Bert-VITS2/resolve/main/model_assets/Rinne/config.json \
+  https://huggingface.co/RinneAi/Rinne_Style-Bert-VITS2/resolve/main/model_assets/Rinne/style_vectors.npy \
+  https://huggingface.co/RinneAi/Rinne_Style-Bert-VITS2/resolve/main/model_assets/Rinne/Rinne.safetensors
 fi
